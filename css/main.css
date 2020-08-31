@@ -2,6 +2,12 @@ body {
 background-color: #2F4736;
 color: #B9C8BE;
 }
+a {
+	color: #849F8C;
+}
+a:hover {
+	color: #B9C8BD;
+}
 .navigation  {
 }
 .navigation li {
