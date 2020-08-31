@@ -1,5 +1,5 @@
 body {
-background-color: #243529 !important;
+background-color: #2F4736;
 color: #B9C8BE;
 }
 .navigation  {
@@ -84,7 +84,7 @@ color: white;
 background-color: #2F4736;
 border: 1px solid #476A51;
 border-radius: 12px;
-height: 40vh;
+height: 300px;
 display: inline-block;
 }
 
@@ -98,7 +98,7 @@ display: inline-block;
 .green-700 { color: #2F4736; }
 .green-800 { color: #243529; }
 .green-900 { color: #18231B; }
-
+.bg-topography { background-image: url('../img/topography.svg'); }
 /*
 50: '#F6F8F7',
 100: '#EDF1EF',

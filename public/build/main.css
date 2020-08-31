@@ -1,5 +1,6 @@
 body {
-  background-color: #2F4736;
+  background-color: red !important;
+  background-image: url('../img/topography.svg');
   color: #B9C8BE;
 }
 
@@ -108,7 +109,7 @@ p {
   background-color: #2F4736;
   border: 1px solid #476A51;
   border-radius: 12px;
-  height: 300px;
+  height: 40vh;
   display: inline-block;
 }
 
@@ -140,9 +141,6 @@ p {
 }
 
 .green-900 { color: #18231B;
-}
-
-.bg-topography { background-image: url('../img/topography.svg');
 }
 
 /*
