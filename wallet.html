@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link rel="stylesheet" href="build/tailwind.css">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.typekit.net/ggk0vlq.css">
+		<link rel="stylesheet" href="build/main.css">
+		<title> Plants Finance | DeFi Organization for Environmental Healing</title>
+		<link rel="icon" href="../img/plant.png" type="image/x-icon" />
+	</head>
+	
+	<body class="p-5">
+		<ul class="navigation pt-0 pb-2">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="farms.html">Farms</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+		<div class="row">
+			<div class="col-6 border-0">
+				<h1 class="pt-5 mt-3"> <span class="white-txt">Plants.</span>Wallet </h1>
+				<h2 class="pb-5"> a DeFi Foundation for environmental healing </h2>
+
+    <!-- Get some bootstrap default styles -->
+    <!-- Construct a Bootstrap layout -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <p>No wallet connected. Connect wallet to show accounts and their ETH balances.</p>
+
+          <div class="alert alert-danger" id="alert-error-https" style="display: none">
+            You can run this example only over HTTPS connection.
+          </div>
+
+          <div id="prepare">
+            <button class="btn-lg btn-success" id="btn-connect">
+              Connect wallet
+            </button>
+          </div>
+
+          <div id="connected" style="display: none">
+
+            <button class="btn btn-success" id="btn-disconnect">
+              Disconnect wallet
+            </button>
+
+            <hr>
+
+            <div id="network">
+              <p>
+                <strong>Connected blockchain:</strong> <span id="network-name"></span>
+              </p>
+
+              <p>
+                <strong>Selected account:</strong> <span id="selected-account"></span>
+              </p>
+
+            </div>
+
+            <hr>
+
+            <h3>All account balances</h3>
+
+            <table class="table table-listing">
+              <thead>
+                <th>Address</th>
+                <th>ETH balance</th>
+              </thead>
+
+              <tbody id="accounts">
+              </tbody>
+            </table>
+
+            <p>Please try to switch between different accounts in your wallet if your wallet supports this functonality.</p>
+
+          </div>
+
+          <br>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- We use simple <template> templating for the example -->
+    <div id="templates" style="display: none">
+      <template id="template-balance">
+        <tr>
+          <th class="address"></th>
+          <td class="balance"></td>
+        </tr>
+      </template>
+    </div>
+
+    <!--
+
+      Use unpkg CDN to load all NPM packages to vanilla Javascript - read more at http://unpkg.com
+
+      On your deployment, you properly either want to use a preprocessing tool like webpack
+      to include these files, or extract NPM archives and manually host the files inside.
+
+      TODO: Pin down all versions.
+
+    -->
+
+    <script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.0/dist/index.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/evm-chains/lib/index.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
+
+    <!-- This is our example code -->
+    <script type="text/javascript" src="js/example.js"></script>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
