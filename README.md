@@ -1,2 +1,2 @@
-# website
-plants finance website
+# tailwind-bootstrap
+a boilerplate for tailwind projects
