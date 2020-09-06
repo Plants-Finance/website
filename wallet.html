@@ -12,6 +12,23 @@
 		<title> Plants Finance | DeFi Organization for Environmental Healing</title>
 		<link rel="icon" href="../img/plant.png" type="image/x-icon" />
 	</head>
+  <script>
+    //  You have to refer to default since it was bundled for ESModules
+// but after that the documentation will be the same
+
+const Web3Modal = window.Web3Modal.default;
+const providerOptions = {
+  /* See Provider Options Section */
+};
+
+const web3Modal = new Web3Modal({
+  network: "mainnet", // optional
+  cacheProvider: true, // optional
+  providerOptions // required
+});
+
+const provider = await web3Modal.connect();
+  </script>
 	
 	<body class="p-5">
 		<ul class="navigation pt-0 pb-2">
