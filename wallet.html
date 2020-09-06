@@ -1,21 +1,25 @@
 <html>
   <head>
-    <title>Web3modal example written in vanilla JavaScript and HTML</title>
+    <title>Plants.Finance Vault</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Get some bootstrap default styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/ggk0vlq.css">
+		<link rel="stylesheet" href="build/tailwind.css">
     <link rel="stylesheet" href="build/main.css">
+    <script src="https://kit.fontawesome.com/78ce75f45f.js" crossorigin="anonymous"></script>
+		<title> Plants Finance | DeFi Organization for Environmental Healing</title>
+		<link rel="icon" href="../img/plant.png" type="image/x-icon" />
   </head>
   <body class="" style="background-color: #2F4736; color: white;">
     <!-- Construct a Bootstrap layout -->
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Plant.finance Wallet</h1>
+          <h1 class="pt-5 mt-3"> <span class="white-txt">Plants.</span>wallet </h1>
 
-          <p>No wallet connected. Connect wallet to show accounts and their ETH balances.</p>
 
           <div class="alert alert-danger" id="alert-error-https" style="display: none">
             You can run this example only over HTTPS connection.
@@ -27,39 +31,36 @@
 
           <div id="connected" style="display: none">
 
-            <button class="btn btn-primary" id="btn-disconnect">
+            <button class="secondary-button mr-4" id="btn-disconnect">
               Disconnect wallet
             </button>
 
-            <hr>
+
 
             <div id="network">
-              <p>
+              <p class="invisible">
                 <strong>Connected blockchain:</strong> <span id="network-name"></span>
               </p>
 
-              <p>
-                <strong>Selected account:</strong> <span id="selected-account"></span>
+              <p class="text-3xl text-white ">
+                <span class="rounded-full px-8 border border-green-200 py-2" id="selected-account"></span>
               </p>
 
             </div>
 
-            <hr>
+    
 
-            <h3>All account balances</h3>
-
+           
+            <h3 class="text-3xl py-10">Your Wallet</h3>
             <table class="table table-listing">
               <thead>
-                <th>Address</th>
-                <th>ETH balance</th>
+               
               </thead>
 
               <tbody id="accounts">
               </tbody>
             </table>
-
-            <p>Please try to switch between different accounts in your wallet if your wallet supports this functonality.</p>
-
+            
           </div>
 
           <br>
@@ -72,12 +73,14 @@
     <!-- We use simple <template> templating for the example -->
     <div id="templates" style="display: none">
       <template id="template-balance">
-        <tr>
-          <th class="address"></th>
-          <td class="balance"></td>
-        </tr>
+          <h1 class="invisible address"></h1>
+          <h1 class="balance p-4 rounded-lg w-1/4 h-48 "><h3 class="text-green-100">ETH</h3> </h1>  
       </template>
     </div>
+
+    <!---- end web 3 template balance-->
+
+  
 
     <!--
 
